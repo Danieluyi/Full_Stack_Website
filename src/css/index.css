@@ -1,0 +1,334 @@
+/* Font source definition */
+@font-face {
+  font-family: "NunitoSans-Regular";
+  src: url("./ico/NunitoSans-Regular.ttf");
+  }
+
+/* This makes the webpage not have any unnecessary spaces on both edges */
+html, body{
+    margin: 0;
+    width: 100%;
+    font-family: NunitoSans-Regular, Helvetica, sans-serif;
+    font-size: 17px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* ############################### NAVBAR BEGINS ############################################## */
+
+/* Add a black background color to the top navigation */
+header {
+  margin: 0;
+  width: 100%;
+  position: relative;
+}
+
+#topNav {
+  background-color: #343a40;
+  transition-property: background-color;
+  transition-duration: 1s;
+  opacity: 0.9;
+  overflow: visible;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* Style the links inside the navigation bar */
+nav a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+nav a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(214, 181, 132);
+    color: black;
+}
+
+/* Add an active class to highlight the current page */
+nav .active {
+    background-color: rgb(214, 181, 132);
+    color: black;
+}
+
+/*  */
+/* DROP DOWN BUTTON IN NAVBAR STARTS */
+/*  */
+
+/* The dropdown div container in nav */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 20px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* div inside Dropdown should be hidden */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  opacity: 0.7;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.9);
+  z-index: 1;
+}
+
+/* display Links inside the hidden sub-div dropdown */
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Show the .dropdown-content div hover upon .dropdown div */
+.dropdown:hover .dropdown-content {
+  display: block;
+  color: white;
+}
+
+/*  */
+/* DROP DOWN BUTTON IN NAVBAR ENDS */
+/*  */
+
+/* Hide the link that should open and close the topnav on small screens */
+nav .icon{
+    display: none;
+}
+
+
+/* ############################### NAVBAR ENDS ############################################## */
+
+/* Top image */
+#topimg, #topimg img {
+  width: 100%;
+  height: auto;
+  position: relative;
+
+}
+
+/* Buttons ontop top image */
+#topimg #bt1_top {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 15%;
+  text-align: center;
+}
+
+/* Turn links ontop image to buttons */
+#topimg #bt1_top a {
+  border-radius: 15px;
+  margin: 5px 5px 10px 5px;
+  padding: 12px 12px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: rgb(241, 235, 235);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+}
+
+/* On hover upon the links on top image */
+#topimg #bt1_top a:hover {
+  padding: 15px 15px;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+/* ################################################################33 */
+/* Required for using "position" in child divs */
+section {
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+
+/* Body columns */
+#col1, #col2, #col3, #col4 {
+  float: left;
+  width: 35%;
+}
+
+/* center images */
+#col1, #col4 {text-align: center;}
+
+#col2, #col3 {
+  margin-top: 10%;
+  background-color: rgba(240, 234, 234, 0.76);
+  border-radius: 15px;
+  text-align: left;
+}
+
+/* For clearing unequal div heights ofcol1 & col2 */
+#colbr  {
+  width: 100%;
+  display: table;
+  position: relative;
+}
+
+#col1, #col3 {
+  padding-left: 10%;
+  padding-right: 5%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#col2, #col4 {
+  padding-right: 10%;
+  padding-left: 5%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* make images pop on hover */
+#col1 img:hover, #col4 img:hover {
+  padding-left: 10px;
+  background-color: #343a4027;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+#col5 {
+  text-align: center;
+  width: 100%;
+  display: table;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Footer section */
+footer {
+  background-color: #343a40;
+  color: white;
+  position: relative;
+}
+
+#foot1, #foot2, #foot3, #foot4 {
+  float: left;
+  width: 20%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#foot1 {
+  padding-left: 5%;
+}
+
+#foot2, #foot3 {
+  padding-left: 2.5%;
+}
+
+#foot4 {
+  padding-right: 10%;
+}
+
+#foot5 {
+  text-align: center;
+  display: table;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+/* Custom icons for footer list items */
+footer li {
+  list-style-position: inside;
+  padding-bottom: 10px;
+}
+
+#f1 {list-style-image: url('./ico/f1.gif');}
+
+#f2 {list-style-image: url('./ico/f2.gif');}
+
+#f3 {list-style-image: url('./ico/f3.gif');}
+
+#f4 {list-style-image: url('./ico/f4.gif');}
+
+#f5 {list-style-image: url('./ico/f5.gif');}
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    #topimg img {
+      width: 150%;
+      margin-left: -50%;
+    }
+
+    nav a:not(:first-child) {display: none;}
+
+    nav .dropdown {display: none;}
+
+    nav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+    nav.responsive {position: relative;}
+    nav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    nav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    nav.responsive .dropdown{
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    nav.responsive .dropdown-content {
+      display: block;
+      position: relative;
+      background-color: black;
+      opacity: 0.7;
+      min-width: 160px;
+      padding-left: 50px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+}
+
+/* When the screen is less than 600 pixels wide, expand all body divs to full screen width, one div at a time */
+@media screen and (max-width: 600px) {
+ #col1, #col2, #col3, #col4, #col5, #foot1, #foot2, #foot3, #foot4, #foot5 {
+   width: 90%;
+   padding-left: 5%;
+   padding-right: 5%;
+  }
+
+ #foot1, #foot2, #foot3, #foot4, #foot5 {
+  text-align: center;
+  }
+}
