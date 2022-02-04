@@ -10,7 +10,7 @@ Built with HTML, CSS, Javascript, CSS, PHP and MYSQL.
 
 
 ## [v0.0.1] - February 2, 2022
-See Live Website Demo at [Khrov Web Store](http://webstore.khrov.com/index.php)
+See Live Website Demo of this project at [Khrov Web Store](http://webstore.khrov.com/index.php)
 
 ### Added
 
